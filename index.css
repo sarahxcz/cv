@@ -1,20 +1,25 @@
-/* Style the header with a grey background and some padding */
+/* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
   background-color: #0475ba;
-  padding: 20px 10px;
+  height: 72px;
+  position: fixed;
+  right: 0;
+  top: 0; left: 0;
 }
 
 /* Style the header links */
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -34,6 +39,25 @@
     border-radius: 200px 200px 200px 200px;
   }
   
+.header2{
+  font-family: 'Poppins', sans-serif; 
+  display: flex/inline-flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+} 
+.header2 h2{
+  color: #0475ba;
+}
+.identite{
+  height: 180px;
+}
+.presentation{
+  background-color: #0475ba;
+  display: flex;
+}
+
+
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
     .header a {
@@ -44,4 +68,6 @@
     .header-right {
       float: none;
     }
-  }z
+  }
+
+   
